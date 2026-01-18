@@ -1,0 +1,27 @@
+{
+  "name": "circular-economy",
+  "version": "1.0.0",
+  "description": "RAG + Deterministic Scoring Architecture",
+  "main": "index.js",
+  "scripts": {
+    "install-all": "concurrently \"cd frontend && npm install\" \"cd backend && npm install\"",
+    "dev": "concurrently \"cd backend && node api/server.js\" \"cd frontend && npm run dev\"",
+    "backend": "cd backend && node api/server.js",
+    "frontend": "cd frontend && npm run dev"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/areetampo/circular-economy.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/areetampo/circular-economy/issues"
+  },
+  "homepage": "https://github.com/areetampo/circular-economy#readme",
+  "devDependencies": {
+    "concurrently": "^9.2.1"
+  }
+}
