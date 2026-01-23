@@ -1,20 +1,38 @@
 {
-  "name": "circular-economy",
+  "name": "circular-economy-auditor-backend",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "RAG-powered backend for circular economy business auditor",
+  "main": "api/server.js",
+  "type": "module",
   "scripts": {
+    "start": "node api/server.js",
+    "dev": "node --watch api/server.js",
+    "chunk": "node scripts/chunk.js",
+    "embed": "node scripts/embed_and_store.js",
+    "pipeline": "npm run chunk && npm run embed",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "type": "module",
+  "keywords": [
+    "circular-economy",
+    "business-auditor",
+    "rag",
+    "vector-search",
+    "sustainability"
+  ],
+  "author": "Circular Economy Team",
+  "license": "MIT",
   "dependencies": {
     "@supabase/supabase-js": "^2.90.1",
     "cors": "^2.8.5",
+    "csv-parse": "^5.5.2",
     "dotenv": "^17.2.3",
-    "express": "^5.2.1",
-    "openai": "^6.16.0"
+    "express": "^4.18.2",
+    "openai": "^4.28.4"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.2"
+  },
+  "engines": {
+    "node": ">=18.0.0"
   }
 }
