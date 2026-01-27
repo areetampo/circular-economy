@@ -4,11 +4,11 @@
   "description": "RAG + Deterministic Scoring Architecture",
   "main": "index.js",
   "scripts": {
-    "install-all": "concurrently \"cd frontend && npm install\" \"cd backend && npm install\"",
+    "backend": "cd backend && node api/server.js",
+    "frontend": "cd frontend && npm run dev",
     "setup": "npm i && cd backend && npm i && cd ../frontend && npm i",
     "dev": "concurrently \"cd backend && node api/server.js\" \"cd frontend && npm run dev\"",
-    "backend": "cd backend && node api/server.js",
-    "frontend": "cd frontend && npm run dev"
+    "all": "npm run setup && npm run dev"
   },
   "repository": {
     "type": "git",
