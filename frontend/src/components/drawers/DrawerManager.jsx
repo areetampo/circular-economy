@@ -58,7 +58,7 @@ export default function DrawerManager() {
       return <SpecificSampleTestCaseViewDetailsDrawer testCase={data?.testCase} />;
 
     case DRAWER_TYPES.RESULTS_DATABASE_EVIDENCE_DETAILS:
-      return <ResultsDatabaseEvidenceDetailsDrawer data={data?.caseItem} />;
+      return <ResultsDatabaseEvidenceDetailsDrawer caseItem={data?.caseItem} />;
 
     default:
       logger.warn('[DRAWER_MANAGER:UNKNOWN_TYPE]', type);
