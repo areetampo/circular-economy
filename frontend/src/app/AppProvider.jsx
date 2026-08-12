@@ -92,10 +92,10 @@ export default function AppProvider({ children }) {
     <ErrorBoundary>
       <AuthProvider>
         <Toast.Provider
-          placement="top start"
+          placement="top"
           maxVisibleToasts={5}
           scaleFactor={0}
-          gap={50}
+          gap={70}
           duration={3500}
         />
         <DrawerProvider>
