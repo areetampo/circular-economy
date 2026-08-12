@@ -35,10 +35,7 @@ const socialLinks = [
   },
 ];
 
-const creators = [
-  { name: 'Areeb', email: 'areebrawl@gmail.com' },
-  { name: 'Mahit', email: 'mahitsingh02@gmail.com' },
-];
+const creatorInfo = { name: 'Areeb', email: 'areebrawl@gmail.com' };
 
 /**
  * Renders the global site footer with internal navigation and external contact links.
@@ -92,20 +89,13 @@ export default function Footer() {
 
                 <p className="max-w-xs text-xs/relaxed text-(--color-text-secondary) italic">
                   ~ Made by{' '}
-                  {creators.map((creator, index) => (
-                    <Fragment key={creator.name}>
-                      <a
-                        href={`mailto:${creator.email}`}
-                        className="underline decoration-dotted underline-offset-2 transition-colors duration-200 hover:text-(--color-accent) hover:decoration-solid"
-                      >
-                        {creator.name}
-                      </a>
-                      {/* Adds punctuation correctly depending on list position */}
-                      {index < creators.length - 2 && ', '}
-                      {index === creators.length - 2 && ' and '}
-                    </Fragment>
-                  ))}{' '}
-                  <Citrus className="mb-0.5 ml-0.75 inline" size={12} /> ~
+                  <a
+                    href={`mailto:${creatorInfo.email}`}
+                    className="underline decoration-dotted underline-offset-2 transition-colors duration-200 hover:text-(--color-accent) hover:decoration-solid"
+                  >
+                    {creatorInfo.name}
+                  </a>
+                  <Citrus className="mb-0.5 ml-1.25 inline" size={12} /> ~
                 </p>
               </div>
             </motion.div>
