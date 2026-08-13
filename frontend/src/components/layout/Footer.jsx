@@ -31,11 +31,11 @@ const socialLinks = [
   {
     name: 'Email',
     icon: faEnvelope,
-    url: 'mailto:areebrawl@gmail.com',
+    url: 'mailto:areeb.workx@gmail.com',
   },
 ];
 
-const creatorInfo = { name: 'Areeb', email: 'areebrawl@gmail.com' };
+const creatorInfo = { name: 'Areeb', email: 'areeb.workx@gmail.com' };
 
 /**
  * Renders the global site footer with internal navigation and external contact links.
