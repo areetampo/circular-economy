@@ -2,7 +2,7 @@
 
 React 19 + Vite 7 SPA for assessing, visualising, comparing, and managing circular economy evaluations.
 
-- **Authors:** [Areeb Ahmed Zahoori](mailto:areebrawl@gmail.com)
+- **Authors:** [Areeb Ahmed Zahoori](mailto:areeb.workx@gmail.com)
 - **Repository:** [areetampo/circular-iq](https://github.com/areetampo/circular-iq)
 - **License:** MIT
 
@@ -1228,4 +1228,4 @@ For issues or questions:
 
 **Authors:** Areeb Ahmed Zahoori  
 **LICENSE:** MIT  
-**Last Updated:** 12 Aug 2026
+**Last Updated:** 13 Aug 2026
