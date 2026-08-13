@@ -3,7 +3,7 @@
   "private": true,
   "version": "1.0.0",
   "description": "Frontend for RAG-powered evaluator for circular economy business evaluations",
-  "author": "Areeb Ahmed Zahoori <areebrawl@gmail.com>",
+  "author": "Areeb Ahmed Zahoori <areeb.workx@gmail.com>",
   "license": "MIT",
   "type": "module",
   "engines": {
